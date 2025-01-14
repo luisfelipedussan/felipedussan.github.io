@@ -1,0 +1,44 @@
+.camel
+{
+  background-image: url('../../../assets/img/techo.JPG');
+  height: 900px;
+  background-position: center;
+  background-size:cover;
+}
+
+.camel h1{
+
+  color: aliceblue;
+  font-size: 30px;
+  position: absolute;
+  left: 45%;
+  top: 50%;
+  font: 100;
+}
+
+.camel a{
+  color: aliceblue;
+  font-size: 20px;
+  position: absolute;
+  left: 45%;
+  top: 55%;
+
+
+}
+
+
+.camel p{
+  color: aliceblue;
+  font-size: 20px;
+  position: absolute;
+  left: 50%;
+  top: 55%;
+}
+
+.camel active-link
+{
+  font-weight: bold;
+  color:var(--secondary-color);
+  text-decoration:line-through;
+}
+

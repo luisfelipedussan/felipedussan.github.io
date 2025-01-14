@@ -1,0 +1,27 @@
+.aboutme
+{
+  background-image: url('../../../assets/img/about2.jpeg');
+  height: 900px;
+  background-position: center;
+  background-size:cover;
+}
+
+
+
+.aboutme h1{
+
+  color: aliceblue;
+  font-size: 50px;
+  position: absolute;
+  left: 45%;
+  top: 25%;
+  font: 100;
+}
+
+.aboutme p{
+  color: white;
+  font-size: 15px;
+  position: absolute;
+  left: 0%;
+  top: 50%;
+}

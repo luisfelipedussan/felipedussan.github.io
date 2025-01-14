@@ -1,0 +1,6 @@
+.active-link
+{
+  font-weight: bold;
+  color:var(--secondary-color);
+  text-decoration:line-through;
+}
