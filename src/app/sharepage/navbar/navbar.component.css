@@ -1,6 +1,48 @@
-.active-link
-{
+.active-link {
   font-weight: bold;
-  color:var(--secondary-color);
-  text-decoration:line-through;
+  color: var(--secondary-color);
+  text-decoration: line-through;
 }
+
+.navbar-brand {
+  color: #000;
+  font-family: "M PLUS 2";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.nav-link {
+  position: relative;
+  padding: 10px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background-color: #000;
+  border-radius: 50%;
+  bottom: -1px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.nav-link:hover::after {
+  opacity: 1;
+  transform: translateX(-50%) translateY(5px);
+}
+
+.nav-link.active-link {
+  font-weight: bold;
+  color: var(--secondary-color);
+  text-decoration: line-through;
+}
+
+

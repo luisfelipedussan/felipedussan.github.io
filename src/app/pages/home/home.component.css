@@ -8,11 +8,13 @@
 
 .camel h1{
 
+  font-family: Inter ;
   color: aliceblue;
-  font-size: 30px;
+  font-size: 100px;
+  font-weight: 700;
   position: absolute;
-  left: 45%;
-  top: 50%;
+  left: 25%;
+  top: 45%;
   font: 100;
 }
 
@@ -32,7 +34,7 @@
   font-size: 20px;
   position: absolute;
   left: 50%;
-  top: 55%;
+  top: 60%;
 }
 
 .camel active-link

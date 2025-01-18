@@ -1,27 +1,43 @@
-.aboutme
-{
-  background-image: url('../../../assets/img/about2.jpeg');
-  height: 900px;
+.aboutme {
+
   background-position: center;
-  background-size:cover;
+  background-size: cover;
+  height: 900px;
+  display: flex;
+  align-items: center; /* Alinea verticalmente en el centro */
+  justify-content: center; /* Centra los elementos en la página */
+  padding: 20px;
 }
 
+.content {
+  display: flex;
+  width: 100%;
+  max-width: 1200px; /* Puedes ajustar el máximo ancho */
+}
 
+.left-side {
+  flex: 1; /* Ocupa el 50% del espacio */
+}
 
-.aboutme h1{
+.left-side img {
+  width: 100%;
+  height: auto; /* Mantiene la relación de aspecto */
+  border-radius: 10px; /* Bordes redondeados (opcional) */
+}
 
-  color: aliceblue;
+.right-side {
+  flex: 1; /* Ocupa el 50% del espacio */
+  color: black;
+  padding-left: 20px; /* Espacio entre imagen y texto */
+}
+
+.right-side h1 {
   font-size: 50px;
-  position: absolute;
-  left: 45%;
-  top: 25%;
-  font: 100;
+  font-weight: 50;
 }
 
-.aboutme p{
-  color: white;
+.right-side p {
   font-size: 15px;
-  position: absolute;
-  left: 0%;
-  top: 50%;
+  line-height: 1.6;
 }
+
