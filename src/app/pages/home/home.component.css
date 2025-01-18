@@ -1,46 +1,79 @@
-.camel
-{
+.camel {
   background-image: url('../../../assets/img/techo.JPG');
   height: 900px;
   background-position: center;
-  background-size:cover;
+  background-size: cover;
+  position: relative;
+  width: 100vw;
+   /* Asegúrate de que el contenedor ocupe toda la anchura de la ventana */
+  overflow: hidden;
 }
 
-.camel h1{
 
-  font-family: Inter ;
+
+.camel h1 {
+  font-family: Inter;
   color: aliceblue;
   font-size: 100px;
   font-weight: 700;
   position: absolute;
   left: 25%;
-  top: 45%;
-  font: 100;
+  top: 35%; /* Ajustado para que quede más arriba */
+  transition: transform 0.1s ease-in-out;
 }
 
-.camel a{
+.camel h2 {
+  font-family: Inter;
   color: aliceblue;
-  font-size: 20px;
+  font-size: 50px;
+  font-weight: 700;
   position: absolute;
-  left: 45%;
-  top: 55%;
-
-
+  left: 25%;
+  top: 45%; /* Debajo del título principal */
+  transition: transform 0.1s ease-in-out;
 }
 
-
-.camel p{
+.camel .explore-btn {
+  font-family: Inter;
   color: aliceblue;
-  font-size: 20px;
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+  border: 1px solid aliceblue; /* Borde visible */
+  font-size: 18px;
+  font-weight: 700;
+  padding: 10px 20px;
+  border-radius: 5px;
   position: absolute;
-  left: 50%;
-  top: 60%;
+  left: 25%; /* Alineado con los títulos */
+  top: 55%; /* Justo debajo de los títulos */
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
 }
 
-.camel active-link
-{
-  font-weight: bold;
-  color:var(--secondary-color);
-  text-decoration:line-through;
+.camel .explore-btn:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: black;
+  transform: scale(1.05); /* Efecto hover */
 }
+
+.circle {
+  width: 100px; /* Tamaño del círculo */
+  height: 100px;
+  border-radius: 50%; /* Hacerlo circular */
+  background-color: white; /* Color blanco semitransparente */
+  position: absolute;
+  animation: circleAnimation 2s infinite;
+}
+
+@keyframes circleAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 

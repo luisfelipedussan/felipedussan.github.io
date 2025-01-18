@@ -1,0 +1,8 @@
+.content-wrapper {
+  border-top: 2px solid black;
+  margin-top: 10px;
+}
+
+app-navbar {
+  margin-bottom: 20px;
+}
