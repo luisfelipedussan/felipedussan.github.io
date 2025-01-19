@@ -37,7 +37,12 @@
 }
 
 .right-side p {
-  font-size: 15px;
-  line-height: 1.6;
+  font-size: 20px;
+  line-height: 2.5;
+  color: #000;
+  font-family: "Golos Text";
+  font-style: normal;
+  font-weight: 300;
+  text-align: justify;
 }
 

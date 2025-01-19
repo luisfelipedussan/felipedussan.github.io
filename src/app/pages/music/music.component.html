@@ -1,1 +1,36 @@
-<p>music works!</p>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic Tac Toe: Ai Never loses</title>
+  <link rel="stylesheet" href="music.component.css">
+</head>
+<body>
+<h1>Tic Tac Toe: Ai Never loses</h1>
+
+<div id="game-container">
+  <div class="board">
+    <!-- 9 celdas para el tablero, vinculadas a los índices del arreglo de board -->
+    <div *ngFor="let cell of board; let i = index" class="cell" [id]="'cell-' + i" (click)="handlePlayerMove(i)">
+      {{ cell }}
+    </div>
+  </div>
+  <button id="reset-button" (click)="resetGame()">Play Again</button>
+  <div id="game-message"></div>
+</div>
+
+<!-- Secciones debajo del juego -->
+<div id="bottom-section">
+  <div class="left-section">
+    <p>This is a demonstration of the MiniMax algorithm. The MiniMax algorithm is a recursive method that evaluates
+      the best move in a game by assigning scores to the possible outcomes. It constructs a decision tree where each
+      node represents a potential move, with leaves maximizing or minimizing the score based on whose turn it is (the
+      maximizing player or the minimizing player). </p>
+  </div>
+  <div class="right-section">
+    <img src="../../../assets/img/minmax.jpg" alt="Imagen relacionada al juego" />
+  </div>
+</div>
+</body>
+</html>
