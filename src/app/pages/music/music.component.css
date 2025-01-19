@@ -2,11 +2,16 @@ body {
     font-family: Arial, sans-serif;
     text-align: center;
     margin-top: 50px;
+    min-height: 100vh;
+    overflow-y: auto;
 }
 
 h1 {
-    font-size: 2em;
-    color: #333;
+    color: #000;
+      font-family: Literata;
+      font-size: 80px;
+      font-weight: 400;
+      line-height: normal;
 }
 
 #game-container {
@@ -41,9 +46,9 @@ button {
     font-weight: 700;
     padding: 10px 20px;
     border-radius: 5px;
-    position: absolute;
+    position: bottom;
     left: 46%; /* Alineado con los títulos */
-    top: 60%; /* Justo debajo de los títulos */
+    top: 560px; /* Justo debajo de los títulos */
     cursor: pointer;
     transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
 }
@@ -74,11 +79,31 @@ button:hover {
 }
 
 .left-section {
-  width: 45%; /* Establece un porcentaje del ancho disponible */
+  width: 70%;
   display: flex;
   justify-content: center;
   align-items: center;
   padding-left: 40px; /* Añade un espacio interno desde la izquierda */
+}
+
+
+.Q p{
+  font-size: 1.5rem;
+  color: #000;
+  margin-top: 20px;
+  font-family: Literata;
+  font-weight: 100;
+}
+
+.highlight {
+  color: #ff6347;
+  font-weight: bold;
+}
+
+
+.Q a{
+ color: var(--secondary-color);
+  text-decoration: line-through;
 }
 
 .left-section p {

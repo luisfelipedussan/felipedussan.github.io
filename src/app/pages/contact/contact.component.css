@@ -54,7 +54,15 @@
   cursor: pointer;
   margin-top: 20px;
   transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
+
 }
+
+.contact .conect-btn:hover {
+  background-color: var(--secondary-color); /* Color de fondo al pasar el mouse */
+  transform: scale(1.05); /* Aumenta ligeramente el tamaño del botón para un efecto dinámico */
+}
+
+
 
 .contact .right-side {
   width: 100%; /* Asegura que la imagen ocupe todo el ancho disponible */
