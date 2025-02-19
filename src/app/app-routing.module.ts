@@ -6,7 +6,7 @@ import { GalleryComponent } from './pages/gallery/gallery.component';
 import { BookComponent } from './pages/book/book.component';
 import { ShopComponent } from './pages/shop/shop.component';
 import { BlogComponent } from './pages/blog/blog.component';
-import { MusicComponent } from './pages/music/music.component';
+import { ProjectsComponent } from './pages/projects/projects.component';
 import { ContactComponent } from './pages/contact/contact.component';
 //import { AIProyectComponent } from './pages/AIProyect/AIProyect.component';
 
@@ -20,7 +20,7 @@ const routes: Routes = [
   //{path:'shop',component:ShopComponent},
   //{path:'blog',component:BlogComponent},
   {path:'contact',component:ContactComponent},
-  {path:'music',component:MusicComponent}
+  {path:'music',component:ProjectsComponent}
   //{path:'AIProyect',component:AIProyectComponent},
 
 

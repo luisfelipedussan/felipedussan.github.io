@@ -12,7 +12,8 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { ShopComponent } from './pages/shop/shop.component';
 import { BlogComponent } from './pages/blog/blog.component';
 import { BookComponent } from './pages/book/book.component';
-import { MusicComponent } from './pages/music/music.component';
+//import { MusicComponent } from './pages/projects/projects.component';
+import { ProjectsComponent } from './pages/projects/projects.component';
 //import { AIProyectComponent } from './pages/AIProyect/AIProyect.component';
 
 @NgModule({
@@ -27,7 +28,7 @@ import { MusicComponent } from './pages/music/music.component';
     ShopComponent,
     BlogComponent,
     BookComponent,
-    MusicComponent
+    ProjectsComponent
     //AIProyectComponent
   ],
   imports: [

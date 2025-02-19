@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic Tac Toe: Ai Never loses</title>
+</head>
+<body>
+<h1>Tic Tac Toe: Ai Never loses</h1>
+
+<div id="game-container">
+  <div class="board">
+    <!-- 9 celdas para el tablero, vinculadas a los índices del arreglo de board -->
+    <div *ngFor="let cell of board; let i = index" class="cell" [id]="'cell-' + i" (click)="handlePlayerMove(i)">
+      {{ cell }}
+    </div>
+  </div>
+  <button id="reset-button" (click)="resetGame()">Play Again</button>
+  <div id="game-message"></div>
+</div>
+|
+<!-- Secciones debajo del juego -->
+<div id="bottom-section">
+  <div class="left-section">
+    <p>
+      This is a demonstration of the MiniMax algorithm. The MiniMax algorithm is a recursive method that evaluates
+      the best move in a game by assigning scores to the possible outcomes. It constructs a decision tree where each
+      node represents a potential move, with leaves maximizing or minimizing the score based on whose turn it is (the
+      maximizing player or the minimizing player).
+      <span class="highlight">If you beat the game I'll buy you a fancy dinner</span>
+    </p>
+
+  </div>
+  <div class="right-section">
+    <img src="../../../assets/img/minmax.png" alt="tictac" />
+  </div>
+
+</div>
+
+<div class="Q">
+  <h1> Q Learning: Transport System </h1>
+  <p>
+    This is my thesis created back in 2024 which consists of a self-healing system implementation in <span class="highlight"> Scala </span>,
+    applying concepts like Q Learning, dynamic predicates, and reactive programming. The link to the paper can be found
+    <a href="https://repositorio.uniandes.edu.co/entities/publication/348ef51a-18d6-4a75-bb9d-b2720ea8244b" target="_blank">here</a>.
+  </p>
+
+  <iframe
+    src="../../../assets/slides/index.html"
+    width="100%"
+    height="600"
+    allowfullscreen>
+  </iframe>
+
+</div>
+</body>
+</html>
